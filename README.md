@@ -1,73 +1,111 @@
-# Welcome to your Lovable project
+# 📱 PrivacyPal
 
-## Project info
+PrivacyPal is a web application designed to promote **privacy and cybersecurity awareness** among staff at different organizational levels. It provides daily security tips, engaging games, personal reminders, and a reporting feature to foster a security-conscious workplace.
 
-**URL**: https://lovable.dev/projects/49002c92-6bd1-41dd-a8d6-e9189827dcf0
+## 🚀 Features
+- **User Roles**
+  - Top Level: Access to Daily Tips.
+  - Mid Level: Access to Daily Tips, Game Zone, Reminder.
+  - Entry Level: Access to Daily Tips, Game Zone, Reminder, Report Issues.
 
-## How can I edit this code?
+- **Authentication**
+  - User Sign Up & Sign In.
+  - Admin Login (Default: Name - Victor, Email - voviewhiskey@3consult-ng.com).
 
-There are several ways of editing your application.
+- **Daily Tips**
+  - Six Categories: Password Security, Mobile Security, Wi-Fi Safety, Social Engineering, Office Safety.
+  - Tips can be added/removed by the Admin.
 
-**Use Lovable**
+- **Game Zone**
+  - Three Games: Quiz, Drag and Drop, True/False.
+  - Available for Mid Level and Entry Level users.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/49002c92-6bd1-41dd-a8d6-e9189827dcf0) and start prompting.
+- **Reminders**
+  - Users can set personal cybersecurity-related reminders.
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Reporting**
+  - Entry Level users can submit privacy-related reports (anonymous or not).
+  - Reports are visible on the Admin Dashboard.
 
-**Use your preferred IDE**
+- **Admin Dashboard**
+  - Manage Daily Tips.
+  - View Submitted Reports.
+  - Track User Engagement (percentage of active users).
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🛠️ Tech Stack
+- **Frontend:** JavaScript, Tailwind CSS
+- **Backend:** Node.js (Express)
+- **Database:** SQLite
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+## 📂 Project Structure
+```
+PrivacyPal/
+├── client/               # Frontend (React + Tailwind)
+│   ├── public/
+│   └── src/
+│       ├── components/
+│       ├── pages/
+│       ├── assets/
+│       ├── App.js
+│       └── index.js
+├── server/               # Backend (Node.js + Express)
+│   ├── db.js             # SQLite database connection
+│   ├── routes/           # API Routes
+│   ├── controllers/      # Business Logic
+│   └── server.js
+├── package.json
+└── README.md
 ```
 
-**Edit a file directly in GitHub**
+## 🔑 Setup Instructions
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/privacypal.git
+   ```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+2. Navigate to the project directory:
+   ```bash
+   cd privacypal
+   ```
 
-**Use GitHub Codespaces**
+3. Install server dependencies:
+   ```bash
+   cd server
+   npm install
+   ```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+4. Start the backend server:
+   ```bash
+   npm run dev
+   ```
 
-## What technologies are used for this project?
+5. Install client dependencies:
+   ```bash
+   cd ../client
+   npm install
+   ```
 
-This project is built with:
+6. Start the frontend:
+   ```bash
+   npm run dev
+   ```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+7. Access the app at:  
+   ```
+   http://localhost:3000
+   ```
 
-## How can I deploy this project?
+## 🎨 UI Style
+- Primary Color: Orange (#FFA500)
+- Modern, colorful, responsive design
+- Smooth transitions and rounded components
 
-Simply open [Lovable](https://lovable.dev/projects/49002c92-6bd1-41dd-a8d6-e9189827dcf0) and click on Share -> Publish.
+## 📋 Future Improvements
+- Email notifications for reminders
+- More advanced user analytics
+- Admin role management
+- Game progress tracking
 
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## 👤 Admin Credentials (for now)
+- Name: Victor
+- Email: voviewhiskey@3consult-ng.com
